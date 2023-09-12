@@ -1,4 +1,5 @@
-var readlineSync = require("readline-sync");
+const readlineSync = require("readline-sync");
+const abs = (a) => (a < 0 ? -a : a);
 
 while (isNaN(userInput)) {
   var userInput = Number(
@@ -6,4 +7,9 @@ while (isNaN(userInput)) {
   );
 }
 
-console.log(userInput >= 0 ? userInput : userInput / -1);
+console.log(abs(userInput));
+
+/*
+function abs(a) {
+  return a < 0 ? -a : a;
+} */
