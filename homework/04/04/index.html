@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Page</title>
+</head>
+
+<body>
+    <script>
+        // window details because window is the main thing
+        console.log(this)
+
+        // true because this is window
+        console.log(this == window)
+        this.key1 = "donald duck"; // key1 = donald duck
+        window.key2 = "mickey mouse" // key2 = mickey mouse
+        var key3 = "uncle scrooge" // key3 = uncle scrooge
+
+        for (let property in this) {
+            document.write(`${property} = ${this[property]}<br>`)
+        }
+    </script>
+</body>
+
+</html>
